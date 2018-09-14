@@ -1,0 +1,9 @@
+version: '2'
+
+services:
+  php:
+    image: php
+    volumes:
+      - .:/spl
+    working_dir: /spl
+
