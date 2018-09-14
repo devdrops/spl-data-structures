@@ -64,7 +64,7 @@ ini_set('memory_limit', -1);
 <body>
 
 <h1>Benchmark report</h1>
-<p class="version"><?php echo phpversion() . ", " . php_uname('m') . ", " . php_uname('s') . "\n"; ?></p>
+<p class="version">PHP <?php echo phpversion() . ", " . php_uname('m') . ", " . php_uname('s') . "\n"; ?></p>
 
 <?php
 

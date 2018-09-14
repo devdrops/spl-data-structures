@@ -4,75 +4,26 @@
  * Benchmark schedule.
  */
 return [
-
-    // 'Stack::pop' => [
-    //     [MEDIUM, [
-    //         SPL_STACK,
-    //         STACK,
-    //     ]],
-    // ],
-
-    // 'PriorityQueue::push' => [
-    //     [MEDIUM, [
-    //         SPL_PQ,
-    //         PRIORITY_QUEUE,
-    //         // QUEUE,
-    //     ]],
-    // ],
-
-    // 'Set::add' => [
-    //     [MEDIUM, [
-    //         SPL_OS,
-    //         SET,
-    //     ]]
-    // ],
-
-    // 'Set vs. array_unique' => [
-    //     [SMALL, [
-    //         PHP_ARRAY,
-    //         SET,
-    //     ]]
-    // ],
-
-    // 'Map::put' => [
-    //     [MEDIUM, [
-    //         PHP_ARRAY,
-    //         MAP,
-    //     ]],
-    // ],
-
-    // 'Map::remove' => [
-    //     [MEDIUM, [
-    //         PHP_ARRAY,
-    //         MAP,
-    //     ]],
-    // ],
-
-    'Sequence::push (allocated)' => [
-        [MEDIUM, [
-            SPL_FA,
-        ]],
-    ],
-
-    'Sequence::push' => [
-        [MEDIUM, [
+    'ADD' => [
+        [SMALL, [
             PHP_ARRAY,
-            SPL_FA,
             SPL_DLL,
-        ]],
+            SPL_STACK,
+            SPL_QUEUE,
+            SPL_PQ,
+            SPL_FA,
+            SPL_OS,
+        ]]
     ],
 
-     'Sequence::unshift' => [
-         [MEDIUM, [
-             PHP_ARRAY,
-             SPL_DLL,
-         ]],
-     ],
-
-     'Sequence::pop' => [
-         [MEDIUM, [
-             PHP_ARRAY,
-             SPL_DLL,
-         ]],
-     ],
+    'DROP' => [
+        [SMALL, [
+            PHP_ARRAY,
+            SPL_DLL,
+            SPL_STACK,
+            SPL_QUEUE,
+            SPL_PQ,
+            SPL_FA,
+        ]]
+    ],
 ];
